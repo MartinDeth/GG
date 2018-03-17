@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>title</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="row">
+      <div clas="col-md-6">
+        <button id="btnBook">Add Book</button>
+      </div>
+      <div clas="col-md-6">
+        <button id="btnNovel">Add Novel</button>
+      </div>
+    </div>
+    <div class="container hidden" id="formWrap1">
+      <h1>Enter a book:</h1>
+      <form>
+        <div class="row">
+          <div class="col-md-6">
+            <input type="text" class="form-control formInput" id="inputTitle" placeholder="Title" required>
+          </div>
+          <div class="col-md-6">
+            <input type="text" class="form-control formInput" id="inputAuthor" placeholder="Author" required>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <input type="text" class="form-control formInput" id="inputPublisher" placeholder="Publisher" required>
+          </div>
+          <div class="col-md-6">
+            <input type="number" min="1900" max="2018" class="form-control formInput" id="inputYear" placeholder="Year" required>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <input type="number" min="20" max="1000" class="form-control formInput" id="inputPages" placeholder="Pages" required>
+          </div>
+          <div class="col-md-6">
+            <input type="text" class="form-control formInput" id="inputSeries" placeholder="Series">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6">
+            <input type="text" class="form-control  formInput" id="inputSeriesNum" placeholder="SeriesNum">
+          </div>
+          <div class="col-md-6">
+            <input type="text" class="form-control  formInput" id="inputIsbn" placeholder="ISBN" required>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-danger" id="submitForm"> Submit Book </button>
+      </form>
+    </div>
+    <div class="container hidden" id="formWrap2">
+        <h1>Enter a novel:</h1>
+        <form>
+          <div class="row">
+            <div class="col-md-6">
+              <input type="text" class="form-control formInput" id="inputTitle" placeholder="Title" required>
+            </div>
+            <div class="col-md-6">
+              <input type="text" class="form-control formInput" id="inputAuthor" placeholder="Author" required>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <input type="text" class="form-control formInput" id="inputPublisher" placeholder="Publisher" required>
+            </div>
+            <div class="col-md-6">
+              <input type="number" min="1900" max="2018" class="form-control formInput" id="inputYear" placeholder="Year" required>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <input type="number" min="20" max="1000" class="form-control formInput" id="inputPages" placeholder="Pages" required>
+            </div>
+            <div class="col-md-6">
+              <input type="text" class="form-control formInput" id="inputSeries" placeholder="Series">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <input type="text" class="form-control  formInput" id="inputSeriesNum" placeholder="SeriesNum">
+            </div>
+            <div class="col-md-6">
+              <input type="text" class="form-control  formInput" id="inputIsbn" placeholder="ISBN" required>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-danger" id="submitForm"> Submit Book </button>
+        </form>
+      </div>
+    <div class="container" id="tableWrap">
+      <h1>List of Books</h1>
+      <table id="resultTable">
+          <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>Publisher</th>
+            <th>Year</th>
+            <th>Pages</th>
+            <th>Series</th>
+            <th>Series Number</th>
+            <th>ISBN</th>
+          </tr>
+
+      </table>
+      <button id="sortYear">Sort By Year</button>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

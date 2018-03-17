@@ -1,0 +1,16 @@
+input{
+    width: 100%;
+}
+
+tr, th, td {
+    border: 1px solid black;
+    width: 10%;
+}
+
+#tableWrap{
+    margin-top: 10vh;
+}
+
+.hidden{
+    display: none;
+}
